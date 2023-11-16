@@ -1,0 +1,34 @@
+[
+    {
+        "lien": "https://github.com/Alhassane20/Projet6.git",
+        "image": "../images/Kasa.png",
+        "titre": "Créer une application web de location immobilière avec React",
+        "taches": [
+                    "Initialisation de l'application avec Create React App",
+                    "Configuration de la navigations entre pages avec React Router",
+                    "Développer des éléments de l'interface d'un site grâce à des composants"
+        ]
+    },
+
+    {
+        "lien": "https://github.com/Alhassane20/Projet7.git",
+        "image": "../images/Vieux_grimoire.png",
+        "titre": "Développer le backend d'un site de notation de livre",
+        "taches": [
+                    "Mettre en œuvre des opérations CRUD de manière sécurisée",
+                    "Stocker des données de manière sécurisée",
+                    "Implémenter un modèle de données"
+        ]
+    },
+
+    {
+        "lien": "https://github.com/Alhassane20/Projet3.git",
+        "image": "../images/Sophie_bluel.png",
+        "titre": "Créer une page web dynamique avec javascript",
+        "taches": [
+                    "Récupérer des données utilisateurs dans le JavaScript via des formulaires",
+                    "Manipuler des éléments du DOM avec JavaScript",
+                    "Gérer des événements utilisateurs avec JavaScript"
+        ]
+    }
+]
