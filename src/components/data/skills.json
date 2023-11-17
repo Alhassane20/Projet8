@@ -1,21 +1,21 @@
 [
     {
-        "image": "components/images/react.png",
+        "image": "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
         "titre": "React"
     },
 
     {
-        "image": "../images/react.png",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png",
         "titre": "Node.js"
     },
 
     {
-        "image": "../images/react.png",
+        "image": "https://git-scm.com/images/logos/downloads/Git-Logo-White.png",
         "titre": "Git"
     },
 
     {
-        "image": "../images/react.png",
+        "image": "https://companieslogo.com/img/orig/MDB_BIG.D-96d632a9.png?t=1648915248",
         "titre": "MongoDB"
     }
 ]
