@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import Header from './components/jsx/header';
 import Presentation from './components/jsx/presentation';
 import Intro from './components/jsx/introduction';
 import SkillsComponent from './components/jsx/skills'
 import ProjetsComponents from './components/jsx/works'
+import Contact from './components/jsx/contact'
 import './App.css'
 
 function AppRouter() {
@@ -32,12 +34,19 @@ function Accueil() {
         <Intro />
         <h1 id='competences'>Compétences</h1>
         <SkillsComponent />
-        <i class="fa fa-light fa-circle-arrow-down arrow-light2"></i>
+        <Link to="#worksPage">
+          <i className="fa fa-light fa-circle-arrow-down arrow-light2"></i>
+        </Link>
       </div>
 
       <div id='worksPage'>
       <h1 id="titreProjets">Projets</h1>
         <ProjetsComponents />
+      </div>
+
+      <div id='Contact'>
+      <h1 id="contactTitle">Contactez moi</h1>
+        <Contact />
       </div>
 
     </div>

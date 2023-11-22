@@ -7,7 +7,11 @@
                     "Initialisation de l'application avec Create React App",
                     "Configuration de la navigations entre pages avec React Router",
                     "Développer des éléments de l'interface d'un site grâce à des composants"
-        ]
+        ],
+        "langages" : "React / Sass / Github",
+        "lienCode": "https://github.com/Alhassane20/Projet6.git",
+        "contraintes": "X"
+
     },
 
     {
@@ -18,17 +22,36 @@
                     "Mettre en œuvre des opérations CRUD de manière sécurisée",
                     "Stocker des données de manière sécurisée",
                     "Implémenter un modèle de données"
-        ]
+        ],
+        "langages" : "Node JS / Github",
+        "lienCode": "https://github.com/Alhassane20/Projet7.git",
+        "contraintes": "Identification des erreurs"
     },
 
     {
-        "lien": "https://github.com/Alhassane20/Projet3.git",
+        "lien": "https://alhassane20.github.io/Projet3/",
         "image": "https://i.ibb.co/z55DMS0/Sophie-bluel.png",
         "titre": "Créer une page web dynamique avec javascript",
         "taches": [
                     "Récupérer des données utilisateurs dans le JavaScript via des formulaires",
                     "Manipuler des éléments du DOM avec JavaScript",
                     "Gérer des événements utilisateurs avec JavaScript"
-        ]
+        ],
+        "langages" : "Javascript / HTML / CSS",
+        "lienCode": "https://github.com/Alhassane20/Projet3",
+        "contraintes": "Maitriser la logique de javascript"
+    },
+
+    {
+        "lien": "https://alhassane20.github.io/Projet2/",
+        "image": "https://i.ibb.co/dbBDfz9/Logo.png",
+        "titre": "Créer la page d'accueil d'une agence de voyage avec HTML & CSS",
+        "taches": [
+                    "Intégrer du contenu conformément à une maquette avec HTML et CSS",
+                    "Implémenter une interface responsive avec HTML et CSS"
+        ],
+        "langages" : "HTML / CSS",
+        "lienCode": "https://github.com/Alhassane20/Projet2",
+        "contraintes": "Utilisation des blocks convenablement"
     }
 ]

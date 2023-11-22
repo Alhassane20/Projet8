@@ -34,11 +34,23 @@ body {
 }
 
 #worksPage{
-  background-image: url('components/images/fondecran3.jpg');
+  background-color: #D0D0D0 ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100%;
+}
+
+#Contact{
   height: 100vh;
+  background-color: #000571;
+}
+
+#contactTitle{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 60px;
+  color: white;
 }
 
 

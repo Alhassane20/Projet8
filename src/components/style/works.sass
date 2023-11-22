@@ -2,18 +2,37 @@
     display: grid
     grid-template-columns: 25% 25% 25%
     column-gap: 60px
+    row-gap: 60px
     margin-top: 60px
+    padding-bottom: 40px
     justify-content: center
+
+.work
+    background-color: black
+    color: white
+    border-radius: 10px
+    padding: 10px
+    height: 420px
+    transition-property: transform
+    transition-duration: 500ms
+
+.work:hover
+    transform: scale(1.10)
 
 #titreProjets
     margin-top: 0
     text-align: center
     padding-top: 40px
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1)
+    font-size: 36px
 
 .titreProjet
-    color: black
+    color: white
     font-size: 18px
-    margin-top: 0
+    margin-top: 20px
+
+.titreProjet:hover
+    color: #65D3FF
 
 .Block1
     text-decoration: none
@@ -21,8 +40,102 @@
     height: 80px
 
 .Block1 img
+    max-width: 100%
     height: 60%
-    width: 60%
+    display: flex
+    margin-left: auto
+    margin-right: auto
 
 .Block2 ul
     padding-left: 0
+    font-size: 14px
+
+#liencode
+    color: white
+    font-weight: 700
+    display: flex
+    justify-content: center
+
+#liencode:hover
+    color: red
+
+@media screen and (max-width: 1400px)
+    #taches
+        margin-top: 10px
+
+    #taches p 
+        margin: 0
+
+@media screen and (max-width: 1000px)
+    .titreProjet
+        font-size: 16px
+
+    #taches p
+        font-size: 14px
+
+@media screen and (max-width: 900px)
+    #technologies
+        font-size: 14px
+
+    #liencode
+        font-size: 14px
+
+    #contraintes
+        font-size: 14px
+
+@media screen and (max-width: 785px)
+    #worksBlock
+        display: grid
+        grid-template-columns: 30% 30%
+
+@media screen and (max-width: 650px)
+    .titreProjet
+        font-size: 15px
+
+    #taches p
+        font-size: 13px
+
+    #technologies
+        font-size: 13px
+
+    #liencode
+        font-size: 13px
+
+    #contraintes
+        font-size: 12px
+
+@media screen and (max-width: 565px)
+    #worksBlock
+        display: grid
+        grid-template-columns: 70%
+
+    .titreProjet
+        font-size: 18px
+
+    #taches p
+        font-size: 16px
+
+    #technologies
+        font-size: 14px
+
+    #liencode
+        font-size: 16px
+
+    #contraintes
+        font-size: 14px
+
+@media screen and (max-width: 350px)
+    .titreProjet
+        font-size: 16px
+
+    #taches p
+        font-size: 14px
+
+    #technologies
+        font-size: 13px
+
+    #liencode
+        font-size: 14px
+
+    #contraintes
+        font-size: 13px

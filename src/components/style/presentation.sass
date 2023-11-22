@@ -16,7 +16,8 @@
 
 .arrow-light
     margin-left: 90%
-    margin-top: 200px
+    position: absolute
+    top: 680px
     font-size: 66px
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 1)
     cursor: pointer
@@ -28,3 +29,23 @@
     transform: scale(1.40)
     color: #65D3FF
 
+@media screen and (max-width: 680px)
+    #name
+        font-size: 40px
+
+    #poste
+        font-size: 50px
+
+@media screen and (max-width: 510px)
+    #name
+        font-size: 30px
+
+    #poste
+        font-size: 40px
+
+@media screen and (max-width: 460px)
+    #presentationBlock
+        margin-top: 20px
+
+    .arrow-light
+        text-align: center

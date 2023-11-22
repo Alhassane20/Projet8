@@ -10,6 +10,11 @@
     },
 
     {
+        "image": "https://i.ibb.co/1d3RZyY/Java-Script-Logo.png",
+        "titre": "Javascript"
+    },
+
+    {
         "image": "https://git-scm.com/images/logos/downloads/Git-Logo-White.png",
         "titre": "Git"
     },
@@ -17,5 +22,15 @@
     {
         "image": "https://companieslogo.com/img/orig/MDB_BIG.D-96d632a9.png?t=1648915248",
         "titre": "MongoDB"
+    },
+
+    {
+        "image": "https://i.ibb.co/VxcLbFq/HTML5-logo-and-wordmark-svg.png",
+        "titre": "HTML"
+    },
+
+    {
+        "image": "https://i.ibb.co/RgSptyt/CSS3-logo-svg.png",
+        "titre": "CSS"
     }
 ]

@@ -36,3 +36,57 @@
 .menu:hover, .menu a:hover
     color: #65D3FF
     transform: scale(1.30)
+
+@media screen and (max-width: 1150px)
+    #titre
+        margin-left: 50px
+        font-size: 40px
+
+    #header
+        margin-right: 50px
+
+    #menu
+        column-gap: 30px
+
+@media screen and (max-width: 1000px)
+    #menu
+        margin-top: 65px
+
+@media screen and (max-width: 800px)
+    .menu
+        font-size: 18px
+
+    #menu
+        margin-top: 70px
+
+    #titre
+        font-size: 30px
+        margin-top: 60px
+
+@media screen and (max-width: 650px)
+    #header
+        display: flex
+        flex-direction: column
+
+    .menu
+        display: flex
+        margin-left: auto
+        margin-right: auto
+
+    #titre
+        text-align: center
+
+@media screen and (max-width: 460px)
+    #menu
+        display: flex
+        flex-direction: column
+        row-gap: 30px
+        margin-top: 25px
+
+    .menu
+        font-size: 20px
+
+    #titre
+        font-size: 50px
+
+    
