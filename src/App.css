@@ -4,6 +4,7 @@ html {
 
 body {
   overflow-x: hidden;
+  font-family: 'Raleway', sans-serif
 }
 
 .backgroundImage {
@@ -16,7 +17,7 @@ body {
   position: relative;
 }
 
-.overlay {
+#overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -34,7 +35,7 @@ body {
 }
 
 #worksPage{
-  background-color: #D0D0D0 ;
+  background-image: url('components/images/fondecran3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,6 +52,32 @@ body {
   font-size: 50px;
   margin-top: 60px;
   color: white;
+}
+
+#worksPage, #Contact {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.fa-chevron-up{
+  color: white;
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  transition-property: transform;
+  transition-duration: 300ms;
+  text-decoration: none;
+}
+
+.fa-chevron-up:hover{
+  color: #65D3FF;
+  transform: scale(1.30)
+}
+
+#worksPage a, #Contact a{
+  text-decoration: none;
 }
 
 

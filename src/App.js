@@ -24,7 +24,7 @@ function Accueil() {
     <div>
 
       <div className="backgroundImage">
-        <div className="overlay">
+        <div id="overlay">
           <Header />
           <Presentation />
         </div>
@@ -34,19 +34,22 @@ function Accueil() {
         <Intro />
         <h1 id='competences'>Compétences</h1>
         <SkillsComponent />
-        <Link to="#worksPage">
-          <i className="fa fa-light fa-circle-arrow-down arrow-light2"></i>
-        </Link>
       </div>
 
       <div id='worksPage'>
       <h1 id="titreProjets">Projets</h1>
         <ProjetsComponents />
+        <a href='#overlay'>
+            <i class="fa fa-chevron-up"></i>
+            </a>
       </div>
 
       <div id='Contact'>
       <h1 id="contactTitle">Contactez moi</h1>
         <Contact />
+        <a href='#overlay'>
+            <i class="fa fa-chevron-up"></i>
+            </a>
       </div>
 
     </div>
