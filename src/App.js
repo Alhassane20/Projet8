@@ -7,6 +7,7 @@ import Intro from './components/jsx/introduction';
 import SkillsComponent from './components/jsx/skills'
 import ProjetsComponents from './components/jsx/works'
 import Contact from './components/jsx/contact'
+import FormContact from './components/jsx/fromContact';
 import './App.css'
 
 function AppRouter() {
@@ -37,19 +38,22 @@ function Accueil() {
       </div>
 
       <div id='worksPage'>
-      <h1 id="titreProjets">Projets</h1>
+        <h1 id="titreProjets">Projets</h1>
         <ProjetsComponents />
         <a href='#overlay'>
-            <i class="fa fa-chevron-up"></i>
-            </a>
+          <i class="fa fa-chevron-up"></i>
+        </a>
       </div>
 
       <div id='Contact'>
-      <h1 id="contactTitle">Contactez moi</h1>
-        <Contact />
+        <h1 id="contactTitle">Contactez moi</h1>
+        <div id='contact2'>
+          <Contact />
+          <FormContact />
+        </div>
         <a href='#overlay'>
-            <i class="fa fa-chevron-up"></i>
-            </a>
+          <i class="fa fa-chevron-up"></i>
+        </a>
       </div>
 
     </div>

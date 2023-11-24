@@ -1,0 +1,51 @@
+#formulaireContact
+    display: flex
+    flex-direction: column
+    margin-right: 150px
+    background-color: white
+    width: 500px
+    row-gap: 25px
+    height: 480px
+
+#formulaireContact h3 
+    font-size: 18px
+    font-weight: 700
+    text-align: center
+
+#prenom, #email, #objet
+    height: 30px
+
+#message
+    height: 100px
+
+#bouton
+    width: 30%
+    height: 50px
+    margin-left: 46px
+    border: none
+    background-color: blue
+    color: white
+    font-size: 18px
+    font-weight: 700
+    cursor: pointer
+
+#bouton:hover
+    background-color: #65D3FF
+
+#prenom, #email, #objet, #message
+    width: 80%
+    display: flex
+    margin-left: auto
+    margin-right: auto
+    border-top: none
+    border-left: none
+    border-right: none
+    border-bottom: solid 2px
+    border-color: black
+
+#formulaireContact ::placeholder
+    color: blue
+    font-size: 16px
+
+#prenom, #email, #objet, #message:focus
+    outline: none
