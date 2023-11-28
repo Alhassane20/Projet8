@@ -1,6 +1,6 @@
 [
     {
-        "lien": "https://github.com/Alhassane20/Projet6.git",
+        "lien": "https://alhassane20.github.io/Projet6/",
         "image": "https://i.ibb.co/JsxLK35/Kasa.png",
         "titre": "Créer une application web de location immobilière avec React",
         "taches": [
@@ -15,7 +15,7 @@
     },
 
     {
-        "lien": "https://github.com/Alhassane20/Projet7.git",
+        "lien": "https://alhassane20.github.io/Projet7/",
         "image": "https://i.ibb.co/x7yGF9y/Vieux-grimoire.png",
         "titre": "Développer le backend d'un site de notation de livre",
         "taches": [
