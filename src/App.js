@@ -12,7 +12,7 @@ import './App.css'
 
 function AppRouter() {
   return (
-    <Router>
+    <Router basename="/Projet8"> {/* Ajoutez la propriété basename ici */}
       <Routes>
         <Route path='/' element={<Accueil />} />
       </Routes>
