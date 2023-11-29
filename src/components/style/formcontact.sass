@@ -7,9 +7,13 @@
     row-gap: 25px
     height: 480px
 
-#formulaireContact h3 
+.contactclass1
     font-size: 18px
     font-weight: 700
+
+
+#formulaireContact h3 
+    @extend .contactclass1
     text-align: center
 
 #prenom, #email, #objet
@@ -25,8 +29,7 @@
     border: none
     background-color: blue
     color: white
-    font-size: 18px
-    font-weight: 700
+    @extend .contactclass1
     cursor: pointer
 
 #bouton:hover
