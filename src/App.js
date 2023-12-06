@@ -8,6 +8,7 @@ import SkillsComponent from './components/jsx/skills'
 import ProjetsComponents from './components/jsx/works'
 import Contact from './components/jsx/contact'
 import FormContact from './components/jsx/fromContact';
+import Modale from './components/jsx/modal'
 import './App.css'
 
 function AppRouter() {
@@ -39,6 +40,7 @@ function Accueil() {
 
       <div id='worksPage'>
         <h1 id="titreProjets">Projets</h1>
+        <Modale />
         <ProjetsComponents />
         <a href='#overlay'>
           <i class="fa fa-chevron-up"></i>
