@@ -13,7 +13,7 @@ import './App.css'
 
 function AppRouter() {
   return (
-    <Router basename="/Projet8"> {/* Ajoutez la propriété basename ici */}
+    <Router basename="/Projet8">
       <Routes>
         <Route path='/' element={<Accueil />} />
       </Routes>
@@ -25,20 +25,20 @@ function Accueil() {
   return (
     <div>
 
-      <div className="backgroundImage">
+      <div className="backgroundImage">{/*Page d'accueil*/}
         <div id="overlay">
           <Header />
           <Presentation />
         </div>
       </div>
 
-      <div id='colorSkills'>
+      <div id='colorSkills'> {/*Page de présentation*/}
         <Intro />
         <h1 id='competences'>Compétences</h1>
         <SkillsComponent />
       </div>
 
-      <div id='worksPage'>
+      <div id='worksPage'> {/*Page des projets*/}
         <h1 id="titreProjets">Projets</h1>
         <Modale />
         <ProjetsComponents />
@@ -47,7 +47,7 @@ function Accueil() {
         </a>
       </div>
 
-      <div id='Contact'>
+      <div id='Contact'> {/*Page de contact*/}
         <h1 id="contactTitle">Contactez moi</h1>
         <div id='contact2'>
           <Contact />

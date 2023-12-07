@@ -12,6 +12,7 @@ function ProjetsComponents() {
         </div>
     );
 }
+/* Ajout dynamique de chaque données des projets a partir du json*/
 
 function Projets({ lien, image, titre, taches, langages, lienCode, contraintes }) {
     return (
@@ -41,6 +42,6 @@ function Projets({ lien, image, titre, taches, langages, lienCode, contraintes }
             </div>
         </div>
     );
-}
+}/* Ajout des données dans le dom*/
 
 export default ProjetsComponents

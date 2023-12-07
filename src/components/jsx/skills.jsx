@@ -1,7 +1,7 @@
 import skillsDatas from '../data/skills.json'
 import '../style/skills.sass'
 
-function SkillsComponent() {
+function SkillsComponent() { 
     return (
         <div id='skillBlock'>
             {skillsDatas.map(({ image, titre }, index) => (
@@ -10,6 +10,7 @@ function SkillsComponent() {
         </div>
     );
 }
+/*Importation dynamiquement de chaque données des competences*/
 
 function Skills({ image, titre }) {
     return (
@@ -23,4 +24,5 @@ function Skills({ image, titre }) {
         </div>
     );
 }
+/* Ajout dans le dom des données*/
 export default SkillsComponent

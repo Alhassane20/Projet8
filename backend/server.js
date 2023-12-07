@@ -1,38 +1,38 @@
-const http = require('http');
 const nodemailer = require('nodemailer');
+const express = require('express');
 const bodyParser = require('body-parser');
-const app = require('./app');
+const cors = require('cors');
 
+const app = express();
 const PORT = process.env.PORT || 3001;
 
-const cors = require('cors');
-app.use(cors());
-
+// Configuration du middleware CORS
 app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-  }));
+  origin: 'http://localhost:3000',  // Autoriser les requêtes depuis ce domaine
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,  // Autoriser l'envoi des cookies
+}));
 
+// Configuration du middleware Body Parser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// Route pour gérer les requêtes d'envoi d'e-mails
 app.post('/send-email', (req, res) => {
   const { nom, email, objet, message } = req.body;
 
-  // Créer un transporteur pour envoyer des emails
+  // Création du transporteur pour envoyer des e-mails
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
       user: 'seyealhassane@gmail.com',
-      pass: 'yicjkelfeenfgfoi', // Remplacez par votre mot de passe d'application
+      pass: 'yicjkelfeenfgfoi',
     },
   });
-  
 
-  // Définir les options de l'email
+  // Définition des options de l'e-mail
   const mailOptions = {
     from: email,
     to: 'seyealhassane@gmail.com',
@@ -40,7 +40,7 @@ app.post('/send-email', (req, res) => {
     text: `Nom: ${nom}\nEmail: ${email}\nMessage: ${message}`,
   };
 
-  // Envoyer l'email
+  // Envoi de l'e-mail
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return res.status(500).send(error.toString());
@@ -49,6 +49,7 @@ app.post('/send-email', (req, res) => {
   });
 });
 
+// Démarrage du serveur
 app.listen(PORT, () => {
   console.log(`Serveur en cours d'exécution sur le port ${PORT}`);
 });

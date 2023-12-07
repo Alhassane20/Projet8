@@ -7,24 +7,22 @@ function FormContact() {
   const [objet, setObjet] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {// Envoyer les données du formulaire au serveur
     e.preventDefault();
-
-    // Envoyer les données du formulaire au serveur
-    const response = await fetch('http://localhost:3001/send-email', {
+    const response = await fetch('http://localhost:3001/send-email', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ nom, email, objet, message }),
+        body: JSON.stringify({ nom, email, objet, message }), // Envoi des données en json
       });
       
-      const result = await response.text();
+      const result = await response.text(); // Extraire le contenu de la réponse sous forme de texte
       console.log(result);      
   };
 
   return (
-    <form id="formulaireContact" onSubmit={handleSubmit}>
+    <form id="formulaireContact" onSubmit={handleSubmit}> 
       <h3>Envoyez un mail</h3>
       <input type="text" placeholder="Nom" id="prenom" value={nom} onChange={(e) => setNom(e.target.value)} required />
       <input type="email" placeholder="Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
